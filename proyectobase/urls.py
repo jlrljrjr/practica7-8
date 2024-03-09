@@ -21,7 +21,9 @@ from primerapaguina import views
 urlpatterns = [
     path('',views.home),
     path('registro/',views.registro),
+    path('login/',views.iniciarSecion),
     path('salir/',views.cerrarsesion),
+    path('nueva/',views.nuevaReservacion),
     path('admin/', admin.site.urls),
     path('holamundo/',views.holamundo)
 ]

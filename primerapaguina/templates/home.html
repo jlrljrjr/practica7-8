@@ -1,11 +1,17 @@
 <h1>Esta es la pantalla de home</h1>
 {% if user.is_authenticated %}
 <li>
+    <a href="/nueva/">nueva reservacion</a>
+</li>
+<li>
     <a href="/salir/">Cerrar sesion</a>
 </li>
 
 {% else %}
 <li>
     <a href="/registro/">Registrese</a>
+</li>
+<li>
+    <a href="/login/">inicio sesion</a>
 </li>
 {% endif %}
